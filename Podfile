@@ -6,26 +6,7 @@ target 'S3Innovate' do
   use_frameworks!
 
   # Pods for S3Innovate
-  pod 'RxSwift'
-  pod 'RxCocoa'
   pod 'RealmSwift'
-  
-  target 'NetworkLayer' do
-    use_frameworks!
-    
-    # Pods for NetworkLayer
-    pod 'Alamofire'
-    pod 'RxSwift'
-    pod 'RealmSwift'
-  end
-  
-  target 'DomainLayer' do
-    use_frameworks!
-    
-    # Pods for DomainLayer
-    pod 'RxSwift'
-    pod 'RealmSwift'
-  end
   
   target 'S3InnovateTests' do
     inherit! :search_paths

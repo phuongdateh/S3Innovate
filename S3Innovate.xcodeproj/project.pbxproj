@@ -7,26 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4073542740577ED6594053BC /* Pods_S3Innovate_NetworkLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A10357AB9605AA2CAB488395 /* Pods_S3Innovate_NetworkLayer.framework */; };
-		533C5CFC4EF6D6E02BFE96E4 /* Pods_S3Innovate_DomainLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5BEDB46FA83BACEB4B9522 /* Pods_S3Innovate_DomainLayer.framework */; };
 		9C154D6E42F32FFAA2CBC10E /* Pods_S3Innovate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4BD10036AEE66251E2CB78 /* Pods_S3Innovate.framework */; };
-		A4843C5E269585A300003620 /* NetworkLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = A4843C5C269585A300003620 /* NetworkLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A4843C61269585A300003620 /* NetworkLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4843C5A269585A300003620 /* NetworkLayer.framework */; };
-		A4843C62269585A300003620 /* NetworkLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A4843C5A269585A300003620 /* NetworkLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A4843C66269585BE00003620 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4853FDB2694A27D00B38D43 /* Network.swift */; };
-		A4843C67269585C200003620 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4853FDD2694AC3B00B38D43 /* NetworkProvider.swift */; };
-		A4843C712695902300003620 /* DomainLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = A4843C6F2695902300003620 /* DomainLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A4843C742695902300003620 /* DomainLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4843C6D2695902300003620 /* DomainLayer.framework */; };
-		A4843C752695902300003620 /* DomainLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A4843C6D2695902300003620 /* DomainLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A4843C7C269590D300003620 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4843C7B269590D300003620 /* Card.swift */; };
-		A4843C7F2695A38900003620 /* IUseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4843C7E2695A38900003620 /* IUseCaseProvider.swift */; };
-		A4843C812695A66400003620 /* ICardUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4843C802695A66400003620 /* ICardUseCase.swift */; };
-		A4843C842695AE3200003620 /* UseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4843C832695AE3200003620 /* UseCaseProvider.swift */; };
-		A4843C852695D17E00003620 /* DomainLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4843C6D2695902300003620 /* DomainLayer.framework */; };
-		A4843C862695D17E00003620 /* DomainLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A4843C6D2695902300003620 /* DomainLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A4843C8D2695D71900003620 /* CardUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4843C8C2695D71900003620 /* CardUseCase.swift */; };
-		A4843C902695D85500003620 /* CardNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4843C8F2695D85500003620 /* CardNetwork.swift */; };
-		A4843C932695F85300003620 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4843C922695F85300003620 /* Cache.swift */; };
 		A4853FAB2694A0C600B38D43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4853FAA2694A0C600B38D43 /* AppDelegate.swift */; };
 		A4853FAD2694A0C600B38D43 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4853FAC2694A0C600B38D43 /* SceneDelegate.swift */; };
 		A4853FAF2694A0C600B38D43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4853FAE2694A0C600B38D43 /* ViewController.swift */; };
@@ -38,27 +19,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A4843C5F269585A300003620 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A4853F9F2694A0C600B38D43 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A4843C59269585A300003620;
-			remoteInfo = NetworkLayer;
-		};
-		A4843C722695902300003620 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A4853F9F2694A0C600B38D43 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A4843C6C2695902300003620;
-			remoteInfo = DomainLayer;
-		};
-		A4843C872695D17E00003620 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A4853F9F2694A0C600B38D43 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A4843C6C2695902300003620;
-			remoteInfo = DomainLayer;
-		};
 		A4853FBE2694A0C900B38D43 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A4853F9F2694A0C600B38D43 /* Project object */;
@@ -75,19 +35,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A4843C752695902300003620 /* DomainLayer.framework in Embed Frameworks */,
-				A4843C62269585A300003620 /* NetworkLayer.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A4843C892695D17E00003620 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				A4843C862695D17E00003620 /* DomainLayer.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,19 +50,6 @@
 		9A6F473F83A0E7C86B9E4381 /* Pods-S3Innovate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-S3Innovate.debug.xcconfig"; path = "Target Support Files/Pods-S3Innovate/Pods-S3Innovate.debug.xcconfig"; sourceTree = "<group>"; };
 		9F93A49F806E08954E65AE1A /* Pods-S3Innovate-NetworkLayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-S3Innovate-NetworkLayer.debug.xcconfig"; path = "Target Support Files/Pods-S3Innovate-NetworkLayer/Pods-S3Innovate-NetworkLayer.debug.xcconfig"; sourceTree = "<group>"; };
 		A10357AB9605AA2CAB488395 /* Pods_S3Innovate_NetworkLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_S3Innovate_NetworkLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4843C5A269585A300003620 /* NetworkLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4843C5C269585A300003620 /* NetworkLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkLayer.h; sourceTree = "<group>"; };
-		A4843C5D269585A300003620 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A4843C6D2695902300003620 /* DomainLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DomainLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4843C6F2695902300003620 /* DomainLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DomainLayer.h; sourceTree = "<group>"; };
-		A4843C702695902300003620 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A4843C7B269590D300003620 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
-		A4843C7E2695A38900003620 /* IUseCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IUseCaseProvider.swift; sourceTree = "<group>"; };
-		A4843C802695A66400003620 /* ICardUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICardUseCase.swift; sourceTree = "<group>"; };
-		A4843C832695AE3200003620 /* UseCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseProvider.swift; sourceTree = "<group>"; };
-		A4843C8C2695D71900003620 /* CardUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardUseCase.swift; sourceTree = "<group>"; };
-		A4843C8F2695D85500003620 /* CardNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardNetwork.swift; sourceTree = "<group>"; };
-		A4843C922695F85300003620 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 		A4853FA72694A0C600B38D43 /* S3Innovate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = S3Innovate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4853FAA2694A0C600B38D43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4853FAC2694A0C600B38D43 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,8 +61,6 @@
 		A4853FBD2694A0C900B38D43 /* S3InnovateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = S3InnovateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4853FC12694A0C900B38D43 /* S3InnovateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S3InnovateTests.swift; sourceTree = "<group>"; };
 		A4853FC32694A0C900B38D43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A4853FDB2694A27D00B38D43 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
-		A4853FDD2694AC3B00B38D43 /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
 		D040A71D9654C8346C0A684E /* Pods-S3Innovate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-S3Innovate.release.xcconfig"; path = "Target Support Files/Pods-S3Innovate/Pods-S3Innovate.release.xcconfig"; sourceTree = "<group>"; };
 		D9A9E1A91A2B96005E93F03E /* Pods-S3Innovate-DomainLayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-S3Innovate-DomainLayer.debug.xcconfig"; path = "Target Support Files/Pods-S3Innovate-DomainLayer/Pods-S3Innovate-DomainLayer.debug.xcconfig"; sourceTree = "<group>"; };
 		F165D38DE352EFD3B7A0E96A /* Pods-S3InnovateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-S3InnovateTests.release.xcconfig"; path = "Target Support Files/Pods-S3InnovateTests/Pods-S3InnovateTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -136,30 +68,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A4843C57269585A300003620 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A4843C852695D17E00003620 /* DomainLayer.framework in Frameworks */,
-				4073542740577ED6594053BC /* Pods_S3Innovate_NetworkLayer.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A4843C6A2695902300003620 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				533C5CFC4EF6D6E02BFE96E4 /* Pods_S3Innovate_DomainLayer.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A4853FA42694A0C600B38D43 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4843C742695902300003620 /* DomainLayer.framework in Frameworks */,
 				9C154D6E42F32FFAA2CBC10E /* Pods_S3Innovate.framework in Frameworks */,
-				A4843C61269585A300003620 /* NetworkLayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,78 +102,10 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		A4843C5B269585A300003620 /* NetworkLayer */ = {
-			isa = PBXGroup;
-			children = (
-				A4843C912695F80300003620 /* Cache */,
-				A4843C8E2695D84900003620 /* API  */,
-				A4843C822695AE2000003620 /* UseCases */,
-				A4853FDA2694A1FF00B38D43 /* Network */,
-				A4843C5C269585A300003620 /* NetworkLayer.h */,
-				A4843C5D269585A300003620 /* Info.plist */,
-			);
-			path = NetworkLayer;
-			sourceTree = "<group>";
-		};
-		A4843C6E2695902300003620 /* DomainLayer */ = {
-			isa = PBXGroup;
-			children = (
-				A4843C7A2695905C00003620 /* UseCases */,
-				A4843C792695904E00003620 /* Entries */,
-				A4843C6F2695902300003620 /* DomainLayer.h */,
-				A4843C702695902300003620 /* Info.plist */,
-			);
-			path = DomainLayer;
-			sourceTree = "<group>";
-		};
-		A4843C792695904E00003620 /* Entries */ = {
-			isa = PBXGroup;
-			children = (
-				A4843C7B269590D300003620 /* Card.swift */,
-			);
-			path = Entries;
-			sourceTree = "<group>";
-		};
-		A4843C7A2695905C00003620 /* UseCases */ = {
-			isa = PBXGroup;
-			children = (
-				A4843C7E2695A38900003620 /* IUseCaseProvider.swift */,
-				A4843C802695A66400003620 /* ICardUseCase.swift */,
-			);
-			path = UseCases;
-			sourceTree = "<group>";
-		};
-		A4843C822695AE2000003620 /* UseCases */ = {
-			isa = PBXGroup;
-			children = (
-				A4843C832695AE3200003620 /* UseCaseProvider.swift */,
-				A4843C8C2695D71900003620 /* CardUseCase.swift */,
-			);
-			path = UseCases;
-			sourceTree = "<group>";
-		};
-		A4843C8E2695D84900003620 /* API  */ = {
-			isa = PBXGroup;
-			children = (
-				A4843C8F2695D85500003620 /* CardNetwork.swift */,
-			);
-			path = "API ";
-			sourceTree = "<group>";
-		};
-		A4843C912695F80300003620 /* Cache */ = {
-			isa = PBXGroup;
-			children = (
-				A4843C922695F85300003620 /* Cache.swift */,
-			);
-			path = Cache;
-			sourceTree = "<group>";
-		};
 		A4853F9E2694A0C600B38D43 = {
 			isa = PBXGroup;
 			children = (
 				A4853FA92694A0C600B38D43 /* S3Innovate */,
-				A4843C5B269585A300003620 /* NetworkLayer */,
-				A4843C6E2695902300003620 /* DomainLayer */,
 				A4853FA82694A0C600B38D43 /* Products */,
 				2BDDD43BE926A4E6AF8B9131 /* Pods */,
 				B3B483D3EB58E34B03D17AB1 /* Frameworks */,
@@ -273,8 +118,6 @@
 			children = (
 				A4853FA72694A0C600B38D43 /* S3Innovate.app */,
 				A4853FBD2694A0C900B38D43 /* S3InnovateTests.xctest */,
-				A4843C5A269585A300003620 /* NetworkLayer.framework */,
-				A4843C6D2695902300003620 /* DomainLayer.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -302,15 +145,6 @@
 			path = S3InnovateTests;
 			sourceTree = "<group>";
 		};
-		A4853FDA2694A1FF00B38D43 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				A4853FDB2694A27D00B38D43 /* Network.swift */,
-				A4853FDD2694AC3B00B38D43 /* NetworkProvider.swift */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
 		B3B483D3EB58E34B03D17AB1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -324,66 +158,7 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		A4843C55269585A300003620 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A4843C5E269585A300003620 /* NetworkLayer.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A4843C682695902300003620 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A4843C712695902300003620 /* DomainLayer.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		A4843C59269585A300003620 /* NetworkLayer */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A4843C63269585A300003620 /* Build configuration list for PBXNativeTarget "NetworkLayer" */;
-			buildPhases = (
-				2434A51E04FC43D492DB3CB6 /* [CP] Check Pods Manifest.lock */,
-				A4843C55269585A300003620 /* Headers */,
-				A4843C56269585A300003620 /* Sources */,
-				A4843C57269585A300003620 /* Frameworks */,
-				A4843C58269585A300003620 /* Resources */,
-				A4843C892695D17E00003620 /* Embed Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A4843C882695D17E00003620 /* PBXTargetDependency */,
-			);
-			name = NetworkLayer;
-			productName = NetworkLayer;
-			productReference = A4843C5A269585A300003620 /* NetworkLayer.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		A4843C6C2695902300003620 /* DomainLayer */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A4843C782695902300003620 /* Build configuration list for PBXNativeTarget "DomainLayer" */;
-			buildPhases = (
-				3E2104B0D66B2B1CC6641494 /* [CP] Check Pods Manifest.lock */,
-				A4843C682695902300003620 /* Headers */,
-				A4843C692695902300003620 /* Sources */,
-				A4843C6A2695902300003620 /* Frameworks */,
-				A4843C6B2695902300003620 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = DomainLayer;
-			productName = DomainLayer;
-			productReference = A4843C6D2695902300003620 /* DomainLayer.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		A4853FA62694A0C600B38D43 /* S3Innovate */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4853FD12694A0C900B38D43 /* Build configuration list for PBXNativeTarget "S3Innovate" */;
@@ -398,8 +173,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				A4843C60269585A300003620 /* PBXTargetDependency */,
-				A4843C732695902300003620 /* PBXTargetDependency */,
 			);
 			name = S3Innovate;
 			productName = S3Innovate;
@@ -434,13 +207,6 @@
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
-					A4843C59269585A300003620 = {
-						CreatedOnToolsVersion = 12.5.1;
-					};
-					A4843C6C2695902300003620 = {
-						CreatedOnToolsVersion = 12.5.1;
-						LastSwiftMigration = 1250;
-					};
 					A4853FA62694A0C600B38D43 = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
@@ -465,27 +231,11 @@
 			targets = (
 				A4853FA62694A0C600B38D43 /* S3Innovate */,
 				A4853FBC2694A0C900B38D43 /* S3InnovateTests */,
-				A4843C59269585A300003620 /* NetworkLayer */,
-				A4843C6C2695902300003620 /* DomainLayer */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A4843C58269585A300003620 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A4843C6B2695902300003620 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A4853FA52694A0C600B38D43 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -506,50 +256,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2434A51E04FC43D492DB3CB6 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-S3Innovate-NetworkLayer-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3E2104B0D66B2B1CC6641494 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-S3Innovate-DomainLayer-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		4CEC2BEE4680B0CF5105A507 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -614,29 +320,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A4843C56269585A300003620 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A4843C66269585BE00003620 /* Network.swift in Sources */,
-				A4843C902695D85500003620 /* CardNetwork.swift in Sources */,
-				A4843C842695AE3200003620 /* UseCaseProvider.swift in Sources */,
-				A4843C67269585C200003620 /* NetworkProvider.swift in Sources */,
-				A4843C932695F85300003620 /* Cache.swift in Sources */,
-				A4843C8D2695D71900003620 /* CardUseCase.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A4843C692695902300003620 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A4843C7F2695A38900003620 /* IUseCaseProvider.swift in Sources */,
-				A4843C812695A66400003620 /* ICardUseCase.swift in Sources */,
-				A4843C7C269590D300003620 /* Card.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A4853FA32694A0C600B38D43 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -658,21 +341,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A4843C60269585A300003620 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A4843C59269585A300003620 /* NetworkLayer */;
-			targetProxy = A4843C5F269585A300003620 /* PBXContainerItemProxy */;
-		};
-		A4843C732695902300003620 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A4843C6C2695902300003620 /* DomainLayer */;
-			targetProxy = A4843C722695902300003620 /* PBXContainerItemProxy */;
-		};
-		A4843C882695D17E00003620 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A4843C6C2695902300003620 /* DomainLayer */;
-			targetProxy = A4843C872695D17E00003620 /* PBXContainerItemProxy */;
-		};
 		A4853FBF2694A0C900B38D43 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A4853FA62694A0C600B38D43 /* S3Innovate */;
@@ -700,129 +368,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		A4843C64269585A300003620 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9F93A49F806E08954E65AE1A /* Pods-S3Innovate-NetworkLayer.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = G9K8DPHN84;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = NetworkLayer/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = phuong.doan.NetworkLayer;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A4843C65269585A300003620 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 80550CE8C77087E5639AB088 /* Pods-S3Innovate-NetworkLayer.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = G9K8DPHN84;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = NetworkLayer/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = phuong.doan.NetworkLayer;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A4843C762695902300003620 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D9A9E1A91A2B96005E93F03E /* Pods-S3Innovate-DomainLayer.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = G9K8DPHN84;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = DomainLayer/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = phuong.doan.DomainLayer;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A4843C772695902300003620 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 567193F7C12545005852CF65 /* Pods-S3Innovate-DomainLayer.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = G9K8DPHN84;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = DomainLayer/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = phuong.doan.DomainLayer;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		A4853FCF2694A0C900B38D43 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1032,24 +577,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A4843C63269585A300003620 /* Build configuration list for PBXNativeTarget "NetworkLayer" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A4843C64269585A300003620 /* Debug */,
-				A4843C65269585A300003620 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A4843C782695902300003620 /* Build configuration list for PBXNativeTarget "DomainLayer" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A4843C762695902300003620 /* Debug */,
-				A4843C772695902300003620 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		A4853FA22694A0C600B38D43 /* Build configuration list for PBXProject "S3Innovate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
