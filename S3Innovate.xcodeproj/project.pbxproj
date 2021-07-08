@@ -24,9 +24,9 @@
 		A4843C842695AE3200003620 /* UseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4843C832695AE3200003620 /* UseCaseProvider.swift */; };
 		A4843C852695D17E00003620 /* DomainLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4843C6D2695902300003620 /* DomainLayer.framework */; };
 		A4843C862695D17E00003620 /* DomainLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A4843C6D2695902300003620 /* DomainLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A4843C8B2695D32300003620 /* asdasd.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4843C8A2695D32300003620 /* asdasd.swift */; };
 		A4843C8D2695D71900003620 /* CardUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4843C8C2695D71900003620 /* CardUseCase.swift */; };
 		A4843C902695D85500003620 /* CardNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4843C8F2695D85500003620 /* CardNetwork.swift */; };
+		A4843C932695F85300003620 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4843C922695F85300003620 /* Cache.swift */; };
 		A4853FAB2694A0C600B38D43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4853FAA2694A0C600B38D43 /* AppDelegate.swift */; };
 		A4853FAD2694A0C600B38D43 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4853FAC2694A0C600B38D43 /* SceneDelegate.swift */; };
 		A4853FAF2694A0C600B38D43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4853FAE2694A0C600B38D43 /* ViewController.swift */; };
@@ -113,9 +113,9 @@
 		A4843C7E2695A38900003620 /* IUseCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IUseCaseProvider.swift; sourceTree = "<group>"; };
 		A4843C802695A66400003620 /* ICardUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICardUseCase.swift; sourceTree = "<group>"; };
 		A4843C832695AE3200003620 /* UseCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseProvider.swift; sourceTree = "<group>"; };
-		A4843C8A2695D32300003620 /* asdasd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = asdasd.swift; sourceTree = "<group>"; };
 		A4843C8C2695D71900003620 /* CardUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardUseCase.swift; sourceTree = "<group>"; };
 		A4843C8F2695D85500003620 /* CardNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardNetwork.swift; sourceTree = "<group>"; };
+		A4843C922695F85300003620 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 		A4853FA72694A0C600B38D43 /* S3Innovate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = S3Innovate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4853FAA2694A0C600B38D43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4853FAC2694A0C600B38D43 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -192,6 +192,7 @@
 		A4843C5B269585A300003620 /* NetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
+				A4843C912695F80300003620 /* Cache */,
 				A4843C8E2695D84900003620 /* API  */,
 				A4843C822695AE2000003620 /* UseCases */,
 				A4853FDA2694A1FF00B38D43 /* Network */,
@@ -208,7 +209,6 @@
 				A4843C792695904E00003620 /* Entries */,
 				A4843C6F2695902300003620 /* DomainLayer.h */,
 				A4843C702695902300003620 /* Info.plist */,
-				A4843C8A2695D32300003620 /* asdasd.swift */,
 			);
 			path = DomainLayer;
 			sourceTree = "<group>";
@@ -247,16 +247,24 @@
 			path = "API ";
 			sourceTree = "<group>";
 		};
+		A4843C912695F80300003620 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				A4843C922695F85300003620 /* Cache.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
 		A4853F9E2694A0C600B38D43 = {
 			isa = PBXGroup;
 			children = (
 				A4853FA92694A0C600B38D43 /* S3Innovate */,
-				A4853FC02694A0C900B38D43 /* S3InnovateTests */,
 				A4843C5B269585A300003620 /* NetworkLayer */,
 				A4843C6E2695902300003620 /* DomainLayer */,
 				A4853FA82694A0C600B38D43 /* Products */,
 				2BDDD43BE926A4E6AF8B9131 /* Pods */,
 				B3B483D3EB58E34B03D17AB1 /* Frameworks */,
+				A4853FC02694A0C900B38D43 /* S3InnovateTests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -614,6 +622,7 @@
 				A4843C902695D85500003620 /* CardNetwork.swift in Sources */,
 				A4843C842695AE3200003620 /* UseCaseProvider.swift in Sources */,
 				A4843C67269585C200003620 /* NetworkProvider.swift in Sources */,
+				A4843C932695F85300003620 /* Cache.swift in Sources */,
 				A4843C8D2695D71900003620 /* CardUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -625,7 +634,6 @@
 				A4843C7F2695A38900003620 /* IUseCaseProvider.swift in Sources */,
 				A4843C812695A66400003620 /* ICardUseCase.swift in Sources */,
 				A4843C7C269590D300003620 /* Card.swift in Sources */,
-				A4843C8B2695D32300003620 /* asdasd.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

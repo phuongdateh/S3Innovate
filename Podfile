@@ -8,6 +8,7 @@ target 'S3Innovate' do
   # Pods for S3Innovate
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'RealmSwift'
   
   target 'NetworkLayer' do
     use_frameworks!
@@ -15,7 +16,7 @@ target 'S3Innovate' do
     # Pods for NetworkLayer
     pod 'Alamofire'
     pod 'RxSwift'
-    
+    pod 'RealmSwift'
   end
   
   target 'DomainLayer' do
@@ -23,6 +24,7 @@ target 'S3Innovate' do
     
     # Pods for DomainLayer
     pod 'RxSwift'
+    pod 'RealmSwift'
   end
   
   target 'S3InnovateTests' do

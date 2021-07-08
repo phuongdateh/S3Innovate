@@ -17,6 +17,6 @@ public final class UseCaseProvider: IUseCaseProvider {
     }
     
     public func makeCardUseCase() -> ICardUseCase {
-        return CardUseCase(networkProvider.makeCardNetwork())
+        return CardUseCase(networkProvider.makeCardNetwork(), Cache<Card>.init())
     }
 }

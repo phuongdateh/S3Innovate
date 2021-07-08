@@ -1,0 +1,8 @@
+
+Podfile.lock
+Pods/
+S3Innovate.xcodeproj/xcuserdata
+S3Innovate.xcodeproj/xcshareddata
+S3Innovate.xcworkspace
+xcuserdata
+build/

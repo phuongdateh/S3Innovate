@@ -9,12 +9,14 @@ import Foundation
 import RxSwift
 import DomainLayer
 
-final class CardUseCase: ICardUseCase {
+final class CardUseCase<Cache>: ICardUseCase where Cache: AbstractCache, Cache.T == Card {
     
     private let network: CardNetwork
+    private let cache: Cache
     
-    init(_ network: CardNetwork) {
+    init(_ network: CardNetwork,_ cache: Cache) {
         self.network = network
+        self.cache = cache
     }
     
     func cards() -> Observable<[Card]> {
