@@ -15,6 +15,18 @@
 		A4853FB42694A0C800B38D43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4853FB32694A0C800B38D43 /* Assets.xcassets */; };
 		A4853FB72694A0C800B38D43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4853FB52694A0C800B38D43 /* LaunchScreen.storyboard */; };
 		A4853FC22694A0C900B38D43 /* S3InnovateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4853FC12694A0C900B38D43 /* S3InnovateTests.swift */; };
+		A49CBB8A2697E09800DF7A5D /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49CBB892697E09800DF7A5D /* Services.swift */; };
+		A4B12193269744D600FEE1EC /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B12192269744D600FEE1EC /* Card.swift */; };
+		A4B121972697455A00FEE1EC /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B121962697455A00FEE1EC /* APIRequest.swift */; };
+		A4B1219C2697483000FEE1EC /* CardRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B1219B2697483000FEE1EC /* CardRequest.swift */; };
+		A4B121A0269748B900FEE1EC /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B1219F269748B900FEE1EC /* APIClient.swift */; };
+		A4B121AA26975BA900FEE1EC /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B121A926975BA900FEE1EC /* Application.swift */; };
+		A4B121AC26975D0500FEE1EC /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B121AB26975D0500FEE1EC /* APIService.swift */; };
+		A4B121B126975E5300FEE1EC /* CardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B121B026975E5300FEE1EC /* CardsViewModel.swift */; };
+		A4B121B426975E7900FEE1EC /* CardsNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B121B326975E7900FEE1EC /* CardsNavigator.swift */; };
+		A4B121B726975E8D00FEE1EC /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B121B626975E8D00FEE1EC /* CardsViewController.swift */; };
+		A4B121B926975EA400FEE1EC /* Cards.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4B121B826975EA400FEE1EC /* Cards.storyboard */; };
+		A4B121BC269760B000FEE1EC /* Reuseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B121BB269760B000FEE1EC /* Reuseable.swift */; };
 		AC6A6A5A7192104B2D548557 /* Pods_S3InnovateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862AE9DF9FBC118521D2EFF3 /* Pods_S3InnovateTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +73,18 @@
 		A4853FBD2694A0C900B38D43 /* S3InnovateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = S3InnovateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4853FC12694A0C900B38D43 /* S3InnovateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S3InnovateTests.swift; sourceTree = "<group>"; };
 		A4853FC32694A0C900B38D43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A49CBB892697E09800DF7A5D /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		A4B12192269744D600FEE1EC /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		A4B121962697455A00FEE1EC /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		A4B1219B2697483000FEE1EC /* CardRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRequest.swift; sourceTree = "<group>"; };
+		A4B1219F269748B900FEE1EC /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		A4B121A926975BA900FEE1EC /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		A4B121AB26975D0500FEE1EC /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		A4B121B026975E5300FEE1EC /* CardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewModel.swift; sourceTree = "<group>"; };
+		A4B121B326975E7900FEE1EC /* CardsNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsNavigator.swift; sourceTree = "<group>"; };
+		A4B121B626975E8D00FEE1EC /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
+		A4B121B826975EA400FEE1EC /* Cards.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cards.storyboard; sourceTree = "<group>"; };
+		A4B121BB269760B000FEE1EC /* Reuseable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reuseable.swift; sourceTree = "<group>"; };
 		D040A71D9654C8346C0A684E /* Pods-S3Innovate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-S3Innovate.release.xcconfig"; path = "Target Support Files/Pods-S3Innovate/Pods-S3Innovate.release.xcconfig"; sourceTree = "<group>"; };
 		D9A9E1A91A2B96005E93F03E /* Pods-S3Innovate-DomainLayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-S3Innovate-DomainLayer.debug.xcconfig"; path = "Target Support Files/Pods-S3Innovate-DomainLayer/Pods-S3Innovate-DomainLayer.debug.xcconfig"; sourceTree = "<group>"; };
 		F165D38DE352EFD3B7A0E96A /* Pods-S3InnovateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-S3InnovateTests.release.xcconfig"; path = "Target Support Files/Pods-S3InnovateTests/Pods-S3InnovateTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -125,6 +149,12 @@
 		A4853FA92694A0C600B38D43 /* S3Innovate */ = {
 			isa = PBXGroup;
 			children = (
+				A49CBB882697E06700DF7A5D /* Serevice */,
+				A4B121BA269760A200FEE1EC /* Utils */,
+				A4B121AD26975E2D00FEE1EC /* Scenes */,
+				A4B121A826975B9000FEE1EC /* Application */,
+				A4B12194269744F000FEE1EC /* Network */,
+				A4B12191269744CE00FEE1EC /* Model */,
 				A4853FAA2694A0C600B38D43 /* AppDelegate.swift */,
 				A4853FAC2694A0C600B38D43 /* SceneDelegate.swift */,
 				A4853FAE2694A0C600B38D43 /* ViewController.swift */,
@@ -143,6 +173,108 @@
 				A4853FC32694A0C900B38D43 /* Info.plist */,
 			);
 			path = S3InnovateTests;
+			sourceTree = "<group>";
+		};
+		A49CBB882697E06700DF7A5D /* Serevice */ = {
+			isa = PBXGroup;
+			children = (
+				A49CBB892697E09800DF7A5D /* Services.swift */,
+			);
+			path = Serevice;
+			sourceTree = "<group>";
+		};
+		A4B12191269744CE00FEE1EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A4B12192269744D600FEE1EC /* Card.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A4B12194269744F000FEE1EC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A4B1219E269748AD00FEE1EC /* APIClient */,
+				A4B1219D2697483900FEE1EC /* UseCases */,
+				A4B121962697455A00FEE1EC /* APIRequest.swift */,
+				A4B121AB26975D0500FEE1EC /* APIService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A4B1219D2697483900FEE1EC /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				A4B1219B2697483000FEE1EC /* CardRequest.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		A4B1219E269748AD00FEE1EC /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				A4B1219F269748B900FEE1EC /* APIClient.swift */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		A4B121A826975B9000FEE1EC /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A4B121A926975BA900FEE1EC /* Application.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A4B121AD26975E2D00FEE1EC /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				A4B121AE26975E3600FEE1EC /* Cards */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		A4B121AE26975E3600FEE1EC /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				A4B121B526975E8400FEE1EC /* View */,
+				A4B121B226975E6A00FEE1EC /* Navigator */,
+				A4B121AF26975E3E00FEE1EC /* ViewModels */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		A4B121AF26975E3E00FEE1EC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A4B121B026975E5300FEE1EC /* CardsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A4B121B226975E6A00FEE1EC /* Navigator */ = {
+			isa = PBXGroup;
+			children = (
+				A4B121B326975E7900FEE1EC /* CardsNavigator.swift */,
+			);
+			path = Navigator;
+			sourceTree = "<group>";
+		};
+		A4B121B526975E8400FEE1EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A4B121B626975E8D00FEE1EC /* CardsViewController.swift */,
+				A4B121B826975EA400FEE1EC /* Cards.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A4B121BA269760A200FEE1EC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A4B121BB269760B000FEE1EC /* Reuseable.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		B3B483D3EB58E34B03D17AB1 /* Frameworks */ = {
@@ -240,6 +372,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4B121B926975EA400FEE1EC /* Cards.storyboard in Resources */,
 				A4853FB72694A0C800B38D43 /* LaunchScreen.storyboard in Resources */,
 				A4853FB42694A0C800B38D43 /* Assets.xcassets in Resources */,
 				A4853FB22694A0C600B38D43 /* Main.storyboard in Resources */,
@@ -324,9 +457,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4B121AA26975BA900FEE1EC /* Application.swift in Sources */,
+				A4B121B426975E7900FEE1EC /* CardsNavigator.swift in Sources */,
+				A4B121BC269760B000FEE1EC /* Reuseable.swift in Sources */,
+				A49CBB8A2697E09800DF7A5D /* Services.swift in Sources */,
 				A4853FAF2694A0C600B38D43 /* ViewController.swift in Sources */,
+				A4B121B126975E5300FEE1EC /* CardsViewModel.swift in Sources */,
+				A4B121A0269748B900FEE1EC /* APIClient.swift in Sources */,
+				A4B1219C2697483000FEE1EC /* CardRequest.swift in Sources */,
 				A4853FAB2694A0C600B38D43 /* AppDelegate.swift in Sources */,
+				A4B121972697455A00FEE1EC /* APIRequest.swift in Sources */,
+				A4B121B726975E8D00FEE1EC /* CardsViewController.swift in Sources */,
 				A4853FAD2694A0C600B38D43 /* SceneDelegate.swift in Sources */,
+				A4B121AC26975D0500FEE1EC /* APIService.swift in Sources */,
+				A4B12193269744D600FEE1EC /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,18 +635,20 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G9K8DPHN84;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = FFFW2FHT2N;
 				INFOPLIST_FILE = S3Innovate/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = phuong.doan.S3Innovate;
+				PRODUCT_BUNDLE_IDENTIFIER = care.revival.Revival;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development care.revival.Revival";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -513,18 +659,20 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G9K8DPHN84;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = S3Innovate/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = phuong.doan.S3Innovate;
+				PRODUCT_BUNDLE_IDENTIFIER = care.revival.Revival;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
