@@ -6,11 +6,23 @@
 //
 
 import Foundation
+import RxSwift
 
 class CardsViewModel {
-    private let apiservice: APIService
+    private let usecase: ICardUseCase
+    private let navigator: CardsNavigator
     
-    init(apiservice: APIService) {
-        self.apiservice = apiservice
+    init(usecase: ICardUseCase, navigator: CardsNavigator) {
+        self.usecase = usecase
+        self.navigator = navigator
     }
+    
+    private let disposeBag = DisposeBag()
+    
+    func test() {
+        usecase.cards().subscribe(onNext: { cards in
+            print("Number of cards: \(cards.count)")
+        }).disposed(by: disposeBag)
+    }
+    
 }

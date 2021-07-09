@@ -22,6 +22,18 @@ class CardsViewController: ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        viewModel.test()
+        configUI()
+    }
+    
+    private func configUI() {
+        addButton.layer.cornerRadius = addButton.frame.width / 2
+        addButton.rx.tap.subscribe(onNext: { [unowned self] in
+            self.addButton_Tap()
+        }).disposed(by: disposeBag)
+    }
+    
+    private func addButton_Tap() {
         
     }
 }

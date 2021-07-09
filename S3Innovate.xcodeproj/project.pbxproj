@@ -16,6 +16,10 @@
 		A4853FB72694A0C800B38D43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4853FB52694A0C800B38D43 /* LaunchScreen.storyboard */; };
 		A4853FC22694A0C900B38D43 /* S3InnovateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4853FC12694A0C900B38D43 /* S3InnovateTests.swift */; };
 		A49CBB8A2697E09800DF7A5D /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49CBB892697E09800DF7A5D /* Services.swift */; };
+		A49CBB8D2697FBB200DF7A5D /* CardUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49CBB8C2697FBB200DF7A5D /* CardUseCase.swift */; };
+		A49CBB902697FC2800DF7A5D /* IUseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49CBB8F2697FC2800DF7A5D /* IUseCaseProvider.swift */; };
+		A49CBB92269824D600DF7A5D /* NetworkUseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49CBB91269824D600DF7A5D /* NetworkUseCaseProvider.swift */; };
+		A49CBB952698252000DF7A5D /* NetworkCardUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49CBB942698252000DF7A5D /* NetworkCardUseCase.swift */; };
 		A4B12193269744D600FEE1EC /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B12192269744D600FEE1EC /* Card.swift */; };
 		A4B121972697455A00FEE1EC /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B121962697455A00FEE1EC /* APIRequest.swift */; };
 		A4B1219C2697483000FEE1EC /* CardRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B1219B2697483000FEE1EC /* CardRequest.swift */; };
@@ -74,6 +78,10 @@
 		A4853FC12694A0C900B38D43 /* S3InnovateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S3InnovateTests.swift; sourceTree = "<group>"; };
 		A4853FC32694A0C900B38D43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A49CBB892697E09800DF7A5D /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		A49CBB8C2697FBB200DF7A5D /* CardUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardUseCase.swift; sourceTree = "<group>"; };
+		A49CBB8F2697FC2800DF7A5D /* IUseCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IUseCaseProvider.swift; sourceTree = "<group>"; };
+		A49CBB91269824D600DF7A5D /* NetworkUseCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUseCaseProvider.swift; sourceTree = "<group>"; };
+		A49CBB942698252000DF7A5D /* NetworkCardUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCardUseCase.swift; sourceTree = "<group>"; };
 		A4B12192269744D600FEE1EC /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		A4B121962697455A00FEE1EC /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		A4B1219B2697483000FEE1EC /* CardRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRequest.swift; sourceTree = "<group>"; };
@@ -149,6 +157,7 @@
 		A4853FA92694A0C600B38D43 /* S3Innovate */ = {
 			isa = PBXGroup;
 			children = (
+				A49CBB8E2697FC0E00DF7A5D /* Domain */,
 				A49CBB882697E06700DF7A5D /* Serevice */,
 				A4B121BA269760A200FEE1EC /* Utils */,
 				A4B121AD26975E2D00FEE1EC /* Scenes */,
@@ -183,6 +192,32 @@
 			path = Serevice;
 			sourceTree = "<group>";
 		};
+		A49CBB8B2697FBA100DF7A5D /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				A49CBB8C2697FBB200DF7A5D /* CardUseCase.swift */,
+				A49CBB8F2697FC2800DF7A5D /* IUseCaseProvider.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		A49CBB8E2697FC0E00DF7A5D /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				A49CBB8B2697FBA100DF7A5D /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		A49CBB932698250000DF7A5D /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				A4B121962697455A00FEE1EC /* APIRequest.swift */,
+				A4B1219B2697483000FEE1EC /* CardRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
 		A4B12191269744CE00FEE1EC /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,9 +229,9 @@
 		A4B12194269744F000FEE1EC /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				A49CBB932698250000DF7A5D /* Request */,
 				A4B1219E269748AD00FEE1EC /* APIClient */,
 				A4B1219D2697483900FEE1EC /* UseCases */,
-				A4B121962697455A00FEE1EC /* APIRequest.swift */,
 				A4B121AB26975D0500FEE1EC /* APIService.swift */,
 			);
 			path = Network;
@@ -205,7 +240,8 @@
 		A4B1219D2697483900FEE1EC /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
-				A4B1219B2697483000FEE1EC /* CardRequest.swift */,
+				A49CBB91269824D600DF7A5D /* NetworkUseCaseProvider.swift */,
+				A49CBB942698252000DF7A5D /* NetworkCardUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -458,6 +494,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4B121AA26975BA900FEE1EC /* Application.swift in Sources */,
+				A49CBB8D2697FBB200DF7A5D /* CardUseCase.swift in Sources */,
 				A4B121B426975E7900FEE1EC /* CardsNavigator.swift in Sources */,
 				A4B121BC269760B000FEE1EC /* Reuseable.swift in Sources */,
 				A49CBB8A2697E09800DF7A5D /* Services.swift in Sources */,
@@ -465,11 +502,14 @@
 				A4B121B126975E5300FEE1EC /* CardsViewModel.swift in Sources */,
 				A4B121A0269748B900FEE1EC /* APIClient.swift in Sources */,
 				A4B1219C2697483000FEE1EC /* CardRequest.swift in Sources */,
+				A49CBB92269824D600DF7A5D /* NetworkUseCaseProvider.swift in Sources */,
 				A4853FAB2694A0C600B38D43 /* AppDelegate.swift in Sources */,
 				A4B121972697455A00FEE1EC /* APIRequest.swift in Sources */,
+				A49CBB952698252000DF7A5D /* NetworkCardUseCase.swift in Sources */,
 				A4B121B726975E8D00FEE1EC /* CardsViewController.swift in Sources */,
 				A4853FAD2694A0C600B38D43 /* SceneDelegate.swift in Sources */,
 				A4B121AC26975D0500FEE1EC /* APIService.swift in Sources */,
+				A49CBB902697FC2800DF7A5D /* IUseCaseProvider.swift in Sources */,
 				A4B12193269744D600FEE1EC /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
