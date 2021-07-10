@@ -41,6 +41,7 @@ class CardsViewController: ViewController {
             output.cards
                 .drive(tableView.rx.items(cellIdentifier: CardTableViewCell.reuseID, cellType: CardTableViewCell.self)) { tv, cardLocal, cell in
                     cell.setupData(card: cardLocal)
+                    cell.selectionStyle = .none
                 }.disposed(by: disposeBag)
             output.fetching
                 .drive(tableView.refreshControl!.rx.isRefreshing)
@@ -56,11 +57,17 @@ class CardsViewController: ViewController {
     }
     
     private func configUI() {
+        title = "Cards"
         addButton.layer.cornerRadius = addButton.frame.width / 2
         
         tableView.refreshControl = UIRefreshControl()
         tableView.estimatedRowHeight = 64
         tableView.rowHeight = UITableView.automaticDimension
         tableView.register(UINib(nibName: CardTableViewCell.reuseID, bundle: nil), forCellReuseIdentifier: CardTableViewCell.reuseID)
+        tableView.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 0.1))
+        tableView.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 0.1))
+        tableView.backgroundColor = .lightText
+        tableView.backgroundView?.backgroundColor = .lightText
+        tableView.separatorStyle = .none
     }
 }
