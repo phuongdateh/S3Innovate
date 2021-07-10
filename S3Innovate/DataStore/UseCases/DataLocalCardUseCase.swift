@@ -12,13 +12,12 @@ import RxSwift
 class DataLocalCardUseCase: ICardUseCase {
     
     func cards() -> Observable<[Card]> {
-        return Observable<[Card]>.create { observer in
-            DispatchQueue.main.async {
-                let realm = try! Realm()
-                let cards = realm.objects(CardLocal.self)
-                observer.onNext(cards.toArray(ofType: Card.self))
-            }
-            return Disposables.create()
-        }
+        let realm = try! Realm()
+        let cards = realm.objects(CardLocal.self).sorted(byKeyPath: "createdAt", ascending: false)
+        return Observable<[Card]>.just(cards.toArray(ofType: CardLocal.self).map({ $0.toCard()})).asObservable()
+    }
+    
+    func addNewCard(card: Card) -> Observable<Void> {
+        return Observable<Void>.empty()
     }
 }

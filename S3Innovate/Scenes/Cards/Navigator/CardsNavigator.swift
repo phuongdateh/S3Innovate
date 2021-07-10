@@ -16,12 +16,11 @@ protocol ICardsNavigator {
 class CardsNavigator: ICardsNavigator {
     private let storyboard: UIStoryboard
     private let navigationController: UINavigationController
-    private let services: IUseCaseProvider
+    private var services: IUseCaseProvider
     
     init(_ storyboard: UIStoryboard,
-         _ navigationController: UINavigationController,
-         _ services: IUseCaseProvider) {
-        self.services = services
+         _ navigationController: UINavigationController) {
+        self.services = NetworkUseCaseProvider() // Network
         self.navigationController = navigationController
         self.storyboard = storyboard
     }
@@ -40,6 +39,7 @@ extension CardsNavigator {
     }
     
     func goCreateCard() {
+        services = DataLocalUseCaseProvider() // Data Local
         let navigator = CreateCardNavigator(navigationController: navigationController, usecase: services.maketCardUseCase())
         navigator.start()
     }

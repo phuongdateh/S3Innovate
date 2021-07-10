@@ -31,6 +31,9 @@ class CreateCardViewController: ViewController {
     }
     
     private func binds() {
+        if viewModel == nil {
+            return 
+        }
         
     }
     
@@ -39,4 +42,6 @@ class CreateCardViewController: ViewController {
         imageView.layer.cornerRadius = imageView.frame.width / 2
         saveButton.layer.cornerRadius = 5
     }
+    
+    
 }

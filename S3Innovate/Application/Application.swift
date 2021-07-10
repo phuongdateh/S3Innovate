@@ -12,16 +12,14 @@ class Application {
     
     static let shared = Application()
     
-    private let service: IUseCaseProvider
-    
     init() {
-        service = NetworkUseCaseProvider()
+        
     }
     
     func configMain(with window: UIWindow) {
         let storyboard = UIStoryboard(name: "Cards", bundle: nil)
         let navigationController = UINavigationController()
-        let navigator = CardsNavigator(storyboard, navigationController, service)
+        let navigator = CardsNavigator(storyboard, navigationController)
         
         window.rootViewController = navigationController
         navigator.start()

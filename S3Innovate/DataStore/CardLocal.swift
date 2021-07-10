@@ -15,6 +15,7 @@ class CardLocal: Object {
     @objc dynamic var company: String?
     @objc dynamic var position: String?
     @objc dynamic var address: String?
+    @objc dynamic var createdAt: Date?
     
     convenience init(card: Card) {
         self.init()
@@ -24,10 +25,17 @@ class CardLocal: Object {
         self.company = card.company
         self.position = card.position
         self.address = card.address
+        self.createdAt = card.createdAt
     }
     
     override class func primaryKey() -> String? {
         return "id"
+    }
+}
+
+extension CardLocal {
+    func toCard() -> Card {
+        return .init(name: name ?? "", mobile: mobile ?? "", company: company ?? "", position: position ?? "", address: address ?? "", id: id, createdAt: createdAt ?? Date())
     }
 }
 

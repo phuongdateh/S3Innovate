@@ -10,4 +10,5 @@ import RxSwift
 
 protocol ICardUseCase {
     func cards() -> Observable<[Card]>
+    func addNewCard(card: Card) -> Observable<Void>
 }
