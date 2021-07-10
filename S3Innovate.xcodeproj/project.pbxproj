@@ -20,6 +20,10 @@
 		A49CBB902697FC2800DF7A5D /* IUseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49CBB8F2697FC2800DF7A5D /* IUseCaseProvider.swift */; };
 		A49CBB92269824D600DF7A5D /* NetworkUseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49CBB91269824D600DF7A5D /* NetworkUseCaseProvider.swift */; };
 		A49CBB952698252000DF7A5D /* NetworkCardUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49CBB942698252000DF7A5D /* NetworkCardUseCase.swift */; };
+		A49CBB9926984E9400DF7A5D /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49CBB9826984E9400DF7A5D /* CardTableViewCell.swift */; };
+		A49CBB9B26984ECE00DF7A5D /* CardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A49CBB9A26984ECE00DF7A5D /* CardTableViewCell.xib */; };
+		A49CBBA12698583A00DF7A5D /* CardLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49CBBA02698583A00DF7A5D /* CardLocal.swift */; };
+		A49CBBA426987D3200DF7A5D /* Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49CBBA326987D3200DF7A5D /* Realm.swift */; };
 		A4B12193269744D600FEE1EC /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B12192269744D600FEE1EC /* Card.swift */; };
 		A4B121972697455A00FEE1EC /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B121962697455A00FEE1EC /* APIRequest.swift */; };
 		A4B1219C2697483000FEE1EC /* CardRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B1219B2697483000FEE1EC /* CardRequest.swift */; };
@@ -31,6 +35,11 @@
 		A4B121B726975E8D00FEE1EC /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B121B626975E8D00FEE1EC /* CardsViewController.swift */; };
 		A4B121B926975EA400FEE1EC /* Cards.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4B121B826975EA400FEE1EC /* Cards.storyboard */; };
 		A4B121BC269760B000FEE1EC /* Reuseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B121BB269760B000FEE1EC /* Reuseable.swift */; };
+		A4DA206126996F6900D475B1 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DA206026996F6900D475B1 /* ActivityIndicator.swift */; };
+		A4DA20632699710E00D475B1 /* ErrorTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DA20622699710E00D475B1 /* ErrorTracker.swift */; };
+		A4DA2065269971B100D475B1 /* RxSwift+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DA2064269971B100D475B1 /* RxSwift+Ex.swift */; };
+		A4DB641D26993DAB00C5153E /* DataLocalUseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DB641C26993DAB00C5153E /* DataLocalUseCaseProvider.swift */; };
+		A4DB641F26993DE800C5153E /* DataLocalCardUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DB641E26993DE800C5153E /* DataLocalCardUseCase.swift */; };
 		AC6A6A5A7192104B2D548557 /* Pods_S3InnovateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862AE9DF9FBC118521D2EFF3 /* Pods_S3InnovateTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +91,10 @@
 		A49CBB8F2697FC2800DF7A5D /* IUseCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IUseCaseProvider.swift; sourceTree = "<group>"; };
 		A49CBB91269824D600DF7A5D /* NetworkUseCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUseCaseProvider.swift; sourceTree = "<group>"; };
 		A49CBB942698252000DF7A5D /* NetworkCardUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCardUseCase.swift; sourceTree = "<group>"; };
+		A49CBB9826984E9400DF7A5D /* CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
+		A49CBB9A26984ECE00DF7A5D /* CardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardTableViewCell.xib; sourceTree = "<group>"; };
+		A49CBBA02698583A00DF7A5D /* CardLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardLocal.swift; sourceTree = "<group>"; };
+		A49CBBA326987D3200DF7A5D /* Realm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Realm.swift; sourceTree = "<group>"; };
 		A4B12192269744D600FEE1EC /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		A4B121962697455A00FEE1EC /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		A4B1219B2697483000FEE1EC /* CardRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRequest.swift; sourceTree = "<group>"; };
@@ -93,6 +106,11 @@
 		A4B121B626975E8D00FEE1EC /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 		A4B121B826975EA400FEE1EC /* Cards.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cards.storyboard; sourceTree = "<group>"; };
 		A4B121BB269760B000FEE1EC /* Reuseable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reuseable.swift; sourceTree = "<group>"; };
+		A4DA206026996F6900D475B1 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		A4DA20622699710E00D475B1 /* ErrorTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTracker.swift; sourceTree = "<group>"; };
+		A4DA2064269971B100D475B1 /* RxSwift+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RxSwift+Ex.swift"; sourceTree = "<group>"; };
+		A4DB641C26993DAB00C5153E /* DataLocalUseCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLocalUseCaseProvider.swift; sourceTree = "<group>"; };
+		A4DB641E26993DE800C5153E /* DataLocalCardUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLocalCardUseCase.swift; sourceTree = "<group>"; };
 		D040A71D9654C8346C0A684E /* Pods-S3Innovate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-S3Innovate.release.xcconfig"; path = "Target Support Files/Pods-S3Innovate/Pods-S3Innovate.release.xcconfig"; sourceTree = "<group>"; };
 		D9A9E1A91A2B96005E93F03E /* Pods-S3Innovate-DomainLayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-S3Innovate-DomainLayer.debug.xcconfig"; path = "Target Support Files/Pods-S3Innovate-DomainLayer/Pods-S3Innovate-DomainLayer.debug.xcconfig"; sourceTree = "<group>"; };
 		F165D38DE352EFD3B7A0E96A /* Pods-S3InnovateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-S3InnovateTests.release.xcconfig"; path = "Target Support Files/Pods-S3InnovateTests/Pods-S3InnovateTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -157,13 +175,14 @@
 		A4853FA92694A0C600B38D43 /* S3Innovate */ = {
 			isa = PBXGroup;
 			children = (
+				A49CBBA226987D2800DF7A5D /* Extension */,
+				A49CBB9D2698500900DF7A5D /* DataStore */,
 				A49CBB8E2697FC0E00DF7A5D /* Domain */,
 				A49CBB882697E06700DF7A5D /* Serevice */,
 				A4B121BA269760A200FEE1EC /* Utils */,
 				A4B121AD26975E2D00FEE1EC /* Scenes */,
 				A4B121A826975B9000FEE1EC /* Application */,
 				A4B12194269744F000FEE1EC /* Network */,
-				A4B12191269744CE00FEE1EC /* Model */,
 				A4853FAA2694A0C600B38D43 /* AppDelegate.swift */,
 				A4853FAC2694A0C600B38D43 /* SceneDelegate.swift */,
 				A4853FAE2694A0C600B38D43 /* ViewController.swift */,
@@ -204,6 +223,7 @@
 		A49CBB8E2697FC0E00DF7A5D /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				A4B12191269744CE00FEE1EC /* Entries */,
 				A49CBB8B2697FBA100DF7A5D /* UseCases */,
 			);
 			path = Domain;
@@ -218,12 +238,46 @@
 			path = Request;
 			sourceTree = "<group>";
 		};
-		A4B12191269744CE00FEE1EC /* Model */ = {
+		A49CBB9626984BDE00DF7A5D /* CradDetail  */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "CradDetail ";
+			sourceTree = "<group>";
+		};
+		A49CBB9726984E6A00DF7A5D /* CardTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A49CBB9826984E9400DF7A5D /* CardTableViewCell.swift */,
+				A49CBB9A26984ECE00DF7A5D /* CardTableViewCell.xib */,
+			);
+			path = CardTableViewCell;
+			sourceTree = "<group>";
+		};
+		A49CBB9D2698500900DF7A5D /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+				A4DB641926993C0D00C5153E /* UseCases */,
+				A49CBBA02698583A00DF7A5D /* CardLocal.swift */,
+			);
+			path = DataStore;
+			sourceTree = "<group>";
+		};
+		A49CBBA226987D2800DF7A5D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A49CBBA326987D3200DF7A5D /* Realm.swift */,
+				A4DA2064269971B100D475B1 /* RxSwift+Ex.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A4B12191269744CE00FEE1EC /* Entries */ = {
 			isa = PBXGroup;
 			children = (
 				A4B12192269744D600FEE1EC /* Card.swift */,
 			);
-			path = Model;
+			path = Entries;
 			sourceTree = "<group>";
 		};
 		A4B12194269744F000FEE1EC /* Network */ = {
@@ -265,6 +319,7 @@
 		A4B121AD26975E2D00FEE1EC /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				A49CBB9626984BDE00DF7A5D /* CradDetail  */,
 				A4B121AE26975E3600FEE1EC /* Cards */,
 			);
 			path = Scenes;
@@ -299,6 +354,7 @@
 		A4B121B526975E8400FEE1EC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A49CBB9726984E6A00DF7A5D /* CardTableViewCell */,
 				A4B121B626975E8D00FEE1EC /* CardsViewController.swift */,
 				A4B121B826975EA400FEE1EC /* Cards.storyboard */,
 			);
@@ -309,8 +365,19 @@
 			isa = PBXGroup;
 			children = (
 				A4B121BB269760B000FEE1EC /* Reuseable.swift */,
+				A4DA206026996F6900D475B1 /* ActivityIndicator.swift */,
+				A4DA20622699710E00D475B1 /* ErrorTracker.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		A4DB641926993C0D00C5153E /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				A4DB641C26993DAB00C5153E /* DataLocalUseCaseProvider.swift */,
+				A4DB641E26993DE800C5153E /* DataLocalCardUseCase.swift */,
+			);
+			path = UseCases;
 			sourceTree = "<group>";
 		};
 		B3B483D3EB58E34B03D17AB1 /* Frameworks */ = {
@@ -410,6 +477,7 @@
 			files = (
 				A4B121B926975EA400FEE1EC /* Cards.storyboard in Resources */,
 				A4853FB72694A0C800B38D43 /* LaunchScreen.storyboard in Resources */,
+				A49CBB9B26984ECE00DF7A5D /* CardTableViewCell.xib in Resources */,
 				A4853FB42694A0C800B38D43 /* Assets.xcassets in Resources */,
 				A4853FB22694A0C600B38D43 /* Main.storyboard in Resources */,
 			);
@@ -497,20 +565,28 @@
 				A49CBB8D2697FBB200DF7A5D /* CardUseCase.swift in Sources */,
 				A4B121B426975E7900FEE1EC /* CardsNavigator.swift in Sources */,
 				A4B121BC269760B000FEE1EC /* Reuseable.swift in Sources */,
+				A4DA206126996F6900D475B1 /* ActivityIndicator.swift in Sources */,
 				A49CBB8A2697E09800DF7A5D /* Services.swift in Sources */,
+				A49CBB9926984E9400DF7A5D /* CardTableViewCell.swift in Sources */,
 				A4853FAF2694A0C600B38D43 /* ViewController.swift in Sources */,
+				A4DA2065269971B100D475B1 /* RxSwift+Ex.swift in Sources */,
 				A4B121B126975E5300FEE1EC /* CardsViewModel.swift in Sources */,
 				A4B121A0269748B900FEE1EC /* APIClient.swift in Sources */,
+				A4DB641F26993DE800C5153E /* DataLocalCardUseCase.swift in Sources */,
 				A4B1219C2697483000FEE1EC /* CardRequest.swift in Sources */,
 				A49CBB92269824D600DF7A5D /* NetworkUseCaseProvider.swift in Sources */,
 				A4853FAB2694A0C600B38D43 /* AppDelegate.swift in Sources */,
+				A4DA20632699710E00D475B1 /* ErrorTracker.swift in Sources */,
 				A4B121972697455A00FEE1EC /* APIRequest.swift in Sources */,
 				A49CBB952698252000DF7A5D /* NetworkCardUseCase.swift in Sources */,
 				A4B121B726975E8D00FEE1EC /* CardsViewController.swift in Sources */,
 				A4853FAD2694A0C600B38D43 /* SceneDelegate.swift in Sources */,
 				A4B121AC26975D0500FEE1EC /* APIService.swift in Sources */,
+				A49CBBA426987D3200DF7A5D /* Realm.swift in Sources */,
 				A49CBB902697FC2800DF7A5D /* IUseCaseProvider.swift in Sources */,
 				A4B12193269744D600FEE1EC /* Card.swift in Sources */,
+				A4DB641D26993DAB00C5153E /* DataLocalUseCaseProvider.swift in Sources */,
+				A49CBBA12698583A00DF7A5D /* CardLocal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
