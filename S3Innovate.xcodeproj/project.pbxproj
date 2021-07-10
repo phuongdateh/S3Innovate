@@ -42,6 +42,10 @@
 		A4DA206C2699975B00D475B1 /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DA206B2699975B00D475B1 /* CardDetailViewController.swift */; };
 		A4DA2070269997B100D475B1 /* CardDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DA206F269997B100D475B1 /* CardDetailViewModel.swift */; };
 		A4DA2072269999CE00D475B1 /* CardDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4DA2071269999CE00D475B1 /* CardDetail.storyboard */; };
+		A4DA207826999F3100D475B1 /* CreateCardNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DA207726999F3100D475B1 /* CreateCardNavigator.swift */; };
+		A4DA207A2699A01900D475B1 /* CreateCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DA20792699A01900D475B1 /* CreateCardViewController.swift */; };
+		A4DA207C2699A04000D475B1 /* CreateCard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4DA207B2699A04000D475B1 /* CreateCard.storyboard */; };
+		A4DA207E2699A26800D475B1 /* CreateCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DA207D2699A26800D475B1 /* CreateCardViewModel.swift */; };
 		A4DB641D26993DAB00C5153E /* DataLocalUseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DB641C26993DAB00C5153E /* DataLocalUseCaseProvider.swift */; };
 		A4DB641F26993DE800C5153E /* DataLocalCardUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DB641E26993DE800C5153E /* DataLocalCardUseCase.swift */; };
 		AC6A6A5A7192104B2D548557 /* Pods_S3InnovateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862AE9DF9FBC118521D2EFF3 /* Pods_S3InnovateTests.framework */; };
@@ -117,6 +121,10 @@
 		A4DA206B2699975B00D475B1 /* CardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
 		A4DA206F269997B100D475B1 /* CardDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewModel.swift; sourceTree = "<group>"; };
 		A4DA2071269999CE00D475B1 /* CardDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CardDetail.storyboard; sourceTree = "<group>"; };
+		A4DA207726999F3100D475B1 /* CreateCardNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCardNavigator.swift; sourceTree = "<group>"; };
+		A4DA20792699A01900D475B1 /* CreateCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCardViewController.swift; sourceTree = "<group>"; };
+		A4DA207B2699A04000D475B1 /* CreateCard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateCard.storyboard; sourceTree = "<group>"; };
+		A4DA207D2699A26800D475B1 /* CreateCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCardViewModel.swift; sourceTree = "<group>"; };
 		A4DB641C26993DAB00C5153E /* DataLocalUseCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLocalUseCaseProvider.swift; sourceTree = "<group>"; };
 		A4DB641E26993DE800C5153E /* DataLocalCardUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLocalCardUseCase.swift; sourceTree = "<group>"; };
 		D040A71D9654C8346C0A684E /* Pods-S3Innovate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-S3Innovate.release.xcconfig"; path = "Target Support Files/Pods-S3Innovate/Pods-S3Innovate.release.xcconfig"; sourceTree = "<group>"; };
@@ -246,14 +254,14 @@
 			path = Request;
 			sourceTree = "<group>";
 		};
-		A49CBB9626984BDE00DF7A5D /* CradDetail  */ = {
+		A49CBB9626984BDE00DF7A5D /* CardDetail  */ = {
 			isa = PBXGroup;
 			children = (
 				A4DA2068269993BB00D475B1 /* Navigator */,
 				A4DA2067269993B500D475B1 /* ViewModels */,
 				A4DA2066269993AB00D475B1 /* Views */,
 			);
-			path = "CradDetail ";
+			path = "CardDetail ";
 			sourceTree = "<group>";
 		};
 		A49CBB9726984E6A00DF7A5D /* CardTableViewCell */ = {
@@ -330,7 +338,8 @@
 		A4B121AD26975E2D00FEE1EC /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				A49CBB9626984BDE00DF7A5D /* CradDetail  */,
+				A4DA207326999EF500D475B1 /* CreateCard */,
+				A49CBB9626984BDE00DF7A5D /* CardDetail  */,
 				A4B121AE26975E3600FEE1EC /* Cards */,
 			);
 			path = Scenes;
@@ -403,6 +412,41 @@
 			isa = PBXGroup;
 			children = (
 				A4DA2069269993D900D475B1 /* CardDetailNavigator.swift */,
+			);
+			path = Navigator;
+			sourceTree = "<group>";
+		};
+		A4DA207326999EF500D475B1 /* CreateCard */ = {
+			isa = PBXGroup;
+			children = (
+				A4DA207626999F1D00D475B1 /* Navigator */,
+				A4DA207526999F1800D475B1 /* ViewModels */,
+				A4DA207426999F1100D475B1 /* Views */,
+			);
+			path = CreateCard;
+			sourceTree = "<group>";
+		};
+		A4DA207426999F1100D475B1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A4DA20792699A01900D475B1 /* CreateCardViewController.swift */,
+				A4DA207B2699A04000D475B1 /* CreateCard.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A4DA207526999F1800D475B1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A4DA207D2699A26800D475B1 /* CreateCardViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A4DA207626999F1D00D475B1 /* Navigator */ = {
+			isa = PBXGroup;
+			children = (
+				A4DA207726999F3100D475B1 /* CreateCardNavigator.swift */,
 			);
 			path = Navigator;
 			sourceTree = "<group>";
@@ -514,6 +558,7 @@
 				A4B121B926975EA400FEE1EC /* Cards.storyboard in Resources */,
 				A4853FB72694A0C800B38D43 /* LaunchScreen.storyboard in Resources */,
 				A49CBB9B26984ECE00DF7A5D /* CardTableViewCell.xib in Resources */,
+				A4DA207C2699A04000D475B1 /* CreateCard.storyboard in Resources */,
 				A4853FB42694A0C800B38D43 /* Assets.xcassets in Resources */,
 				A4853FB22694A0C600B38D43 /* Main.storyboard in Resources */,
 				A4DA2072269999CE00D475B1 /* CardDetail.storyboard in Resources */,
@@ -605,11 +650,14 @@
 				A4DA206126996F6900D475B1 /* ActivityIndicator.swift in Sources */,
 				A4DA2070269997B100D475B1 /* CardDetailViewModel.swift in Sources */,
 				A49CBB8A2697E09800DF7A5D /* Services.swift in Sources */,
+				A4DA207826999F3100D475B1 /* CreateCardNavigator.swift in Sources */,
 				A49CBB9926984E9400DF7A5D /* CardTableViewCell.swift in Sources */,
 				A4853FAF2694A0C600B38D43 /* ViewController.swift in Sources */,
+				A4DA207A2699A01900D475B1 /* CreateCardViewController.swift in Sources */,
 				A4DA2065269971B100D475B1 /* RxSwift+Ex.swift in Sources */,
 				A4B121B126975E5300FEE1EC /* CardsViewModel.swift in Sources */,
 				A4B121A0269748B900FEE1EC /* APIClient.swift in Sources */,
+				A4DA207E2699A26800D475B1 /* CreateCardViewModel.swift in Sources */,
 				A4DB641F26993DE800C5153E /* DataLocalCardUseCase.swift in Sources */,
 				A4B1219C2697483000FEE1EC /* CardRequest.swift in Sources */,
 				A4DA206C2699975B00D475B1 /* CardDetailViewController.swift in Sources */,

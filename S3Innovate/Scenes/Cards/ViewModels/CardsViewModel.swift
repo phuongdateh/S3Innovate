@@ -53,7 +53,7 @@ class CardsViewModel: ViewModelType {
         
         let createCard: Driver<Void> = input.createCard
             .do(onNext: {
-                print("qqqqqqqq")
+                self.navigator.goCreateCard()
             })
         return Output(fetching: fetching,
                       cards: cards,

@@ -10,6 +10,7 @@ import UIKit
 
 protocol ICardsNavigator {
     func goCardDetail(card: CardLocal)
+    func goCreateCard()
 }
 
 class CardsNavigator: ICardsNavigator {
@@ -35,6 +36,11 @@ class CardsNavigator: ICardsNavigator {
 extension CardsNavigator {
     func goCardDetail(card: CardLocal) {
         let navigator = CardDetailNavigator(navigationController, services, card)
+        navigator.start()
+    }
+    
+    func goCreateCard() {
+        let navigator = CreateCardNavigator(navigationController: navigationController, usecase: services.maketCardUseCase())
         navigator.start()
     }
 }
