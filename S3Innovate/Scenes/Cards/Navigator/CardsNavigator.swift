@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 protocol ICardsNavigator {
-    func goCardDetail(cardId: String)
+    func goCardDetail(card: CardLocal)
 }
 
 class CardsNavigator: ICardsNavigator {
@@ -33,7 +33,8 @@ class CardsNavigator: ICardsNavigator {
 }
 
 extension CardsNavigator {
-    func goCardDetail(cardId: String) {
-        
+    func goCardDetail(card: CardLocal) {
+        let navigator = CardDetailNavigator(navigationController, services, card)
+        navigator.start()
     }
 }

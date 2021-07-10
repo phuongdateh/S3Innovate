@@ -48,9 +48,8 @@ class CardsViewModel: ViewModelType {
         let selecedCard: Driver<CardLocal> = input.selection
             .withLatestFrom(cards) { (indexPath, cards) -> CardLocal in
                 return cards[indexPath.row]
-            }.do(onNext: { cardLocal in
-                print("xxxxxx")
-            })
+            }
+            .do(onNext: navigator.goCardDetail(card:))
         
         let createCard: Driver<Void> = input.createCard
             .do(onNext: {
