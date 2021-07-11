@@ -19,6 +19,7 @@ class CreateCardViewController: ViewController {
     @IBOutlet weak var genderTf: UITextField!
     @IBOutlet weak var dobTf: UITextField!
     @IBOutlet weak var saveButton: UIButton!
+    private var cancelButton: UIButton!
     
     // MARK: - Properties
     var viewModel: CreateCardViewModel!
@@ -42,7 +43,7 @@ class CreateCardViewController: ViewController {
                                                       dob: dobTf.rx.text.orEmpty.asDriver(),
                                                       about: aboutTf.rx.text.orEmpty.asDriver(),
                                                       saveAction: saveButton.rx.tap.asDriver(),
-                                                      cancelAction: Driver.empty()))
+                                                      cancelAction: cancelButton.rx.tap.asDriver()))
         output.dismiss
             .drive()
             .disposed(by: disposeBag)
@@ -58,6 +59,14 @@ class CreateCardViewController: ViewController {
         
         let textfields = [nameTf, positionTf, addressTf, genderTf, dobTf, aboutTf]
         textfields.forEach({ $0?.autocorrectionType = .no})
+        addLeftBarButton()
+    }
+    
+    private func addLeftBarButton() {
+        cancelButton = UIButton()
+        cancelButton.setImage(.init(named: "close"), for: .normal)
+        let leftBarButton = UIBarButtonItem.init(customView: cancelButton)
+        navigationItem.setLeftBarButton(leftBarButton, animated: true)
     }
     
     
