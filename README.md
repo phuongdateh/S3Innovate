@@ -1,11 +1,5 @@
 # Clean architecture with [RxSwift](https://github.com/ReactiveX/RxSwift)
 
-## Contributions are welcome and highly appreciated!!
-You can do this by:
-
-- opening an issue to discuss the current solution, ask a question, propose your solution etc. (also English is not my native language so if you think that something can be corrected please open a PR 😊)
-- opening a PR if you want to fix bugs or improve something
-
 ### Installation
 
 Dependencies in this project are provided via Cocoapods. Please install all dependecies with
@@ -70,12 +64,19 @@ In some cases, we can't use Swift structs for our domain objects because of DB f
 The `Platform` also contains concrete implementations of your use cases, repositories or any services that are defined in the `Domain`.
 
 ```swift
-    override func save(entity: T) -> Observable<Void> {
-        return entity.sync(in: context)
-            .mapToVoid()
-            .flatMapLatest(context.rx.save)
-            .subscribeOn(scheduler)
+func cards() -> Observable<[Card]> {
+    let realm = try! Realm()
+    let cards = realm.objects(CardLocal.self).sorted(byKeyPath: "createdAt", ascending: false)
+    return Observable<[Card]>.just(cards.toArray(ofType: CardLocal.self).map({ $0.toCard()})).asObservable()
+}
+
+func addNewCard(card: Card) -> Observable<Void> {
+    let cardLocal = CardLocal(card: card)
+    let realm = try! Realm()
+    realm.safeWrite {
+        realm.add(cardLocal, update: .all)
     }
+    return Observable<Void>.just(())
 }
 ```
 
