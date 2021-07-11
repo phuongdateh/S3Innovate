@@ -14,17 +14,17 @@ class NetworkCardUseCase: ICardUseCase {
         let provider = DataLocalUseCaseProvider()
         let cache = provider.maketCardUseCase()
         let cardsLocal = cache.cards().asObservable()
-        let stored = APIService.shared.getCards()
+        let _ = APIService.shared.getCards()
             .do(onNext: { cards in
-            cards.forEach({ $0.asLocal() })
-        })
-        return stored.concat(cardsLocal)
+                cards.forEach({ $0.asLocal() })
+            })
+        return cardsLocal
             .map { cards in
                 return cards.sorted(by: { $0.createdAt > $1.createdAt})
             }
     }
     
     func addNewCard(card: Card) -> Observable<Void> {
-        return Observable<Void>.just(())
+        return Observable<Void>.empty()
     }
 }

@@ -15,7 +15,7 @@ protocol ICreateCardNavigator {
 class CreateCardNavigator: ICreateCardNavigator {
     
     private let naivigationController: UINavigationController
-    private let usecase: ICardUseCase // should service 
+    private let usecase: ICardUseCase // should service
     
     init(navigationController: UINavigationController, usecase: ICardUseCase) {
         self.usecase = usecase
@@ -25,8 +25,10 @@ class CreateCardNavigator: ICreateCardNavigator {
     func start() {
         let storyboard = UIStoryboard(name: "CreateCard", bundle: nil)
         let vc = storyboard.instantiateViewController(ofType: CreateCardViewController.self)
-        vc.viewModel = CreateCardViewModel(usecase: usecase)
+        vc.viewModel = CreateCardViewModel(usecase: usecase,
+                                           navigator: self)
         let rootVC = UINavigationController(rootViewController: vc)
+        rootVC.modalPresentationStyle = .fullScreen
         naivigationController.present(rootVC, animated: true, completion: nil)
     }
 

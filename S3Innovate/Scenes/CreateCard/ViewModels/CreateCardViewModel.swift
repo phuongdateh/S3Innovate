@@ -12,9 +12,11 @@ import RxCocoa
 class CreateCardViewModel: ViewModelType {
     
     private let usecase: ICardUseCase
+    private let navigator: CreateCardNavigator
     
-    init(usecase: ICardUseCase) {
+    init(usecase: ICardUseCase, navigator: CreateCardNavigator) {
         self.usecase = usecase
+        self.navigator = navigator
     }
     
     func transform(input: Input) -> Output {
@@ -35,19 +37,36 @@ class CreateCardViewModel: ViewModelType {
                 !$1
         }
         
-//        let saveAction = input.saveAction.withLatestFrom(data)
-//            .map { name, address, position, about, gender, dob in
-//                return Card(name: name, mobile: , company: <#T##String#>, position: <#T##String#>, address: <#T##String#>, id: <#T##String#>)
-//            }
-        return .init()
+        let save = input.saveAction.withLatestFrom(data)
+            .map { name, address, position, about, gender, dob -> Card in
+                return .init(name: name,
+                             mobile: "Default",
+                             company: "Default",
+                             position: position,
+                             address: address,
+                             id: UUID().uuidString,
+                             createdAt: Date())
+            }
+            .flatMapLatest { [unowned self] in
+                return self.usecase.addNewCard(card: $0)
+                    .trackActivity(activityIndicator)
+                    .asDriverOnErrorJustComplete()
+            }
+        
+        let dismiss = Driver.of(save, input.cancelAction)
+            .merge()
+            .do(onNext: {
+                self.navigator.dismiss()
+            })
+        
+        return .init(dismiss: dismiss,
+                     saveEnable: canSave)
     }
 }
 
 extension CreateCardViewModel {
     struct Input {
         let name: Driver<String>
-        let mobile: Driver<String>
-        let company: Driver<String>
         let position: Driver<String>
         let address: Driver<String>
         let gender: Driver<String>
@@ -59,7 +78,7 @@ extension CreateCardViewModel {
     }
     
     struct Output {
-//        let dismiss: Driver<Void>
-//        let saveEnable: Driver<Void>
+        let dismiss: Driver<Void>
+        let saveEnable: Driver<Bool>
     }
 }

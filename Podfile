@@ -9,6 +9,7 @@ target 'S3Innovate' do
   pod 'RealmSwift'
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'IQKeyboardManagerSwift'
   
   target 'S3InnovateTests' do
     inherit! :search_paths

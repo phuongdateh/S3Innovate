@@ -18,6 +18,11 @@ class DataLocalCardUseCase: ICardUseCase {
     }
     
     func addNewCard(card: Card) -> Observable<Void> {
-        return Observable<Void>.empty()
+        let cardLocal = CardLocal(card: card)
+        let realm = try! Realm()
+        realm.safeWrite {
+            realm.add(cardLocal, update: .all)
+        }
+        return Observable<Void>.just(())
     }
 }

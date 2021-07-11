@@ -35,12 +35,29 @@ class CreateCardViewController: ViewController {
             return 
         }
         
+        let output = viewModel.transform(input: .init(name: nameTf.rx.text.orEmpty.asDriver(),
+                                                      position: positionTf.rx.text.orEmpty.asDriver(),
+                                                      address: addressTf.rx.text.orEmpty.asDriver(),
+                                                      gender: genderTf.rx.text.orEmpty.asDriver(),
+                                                      dob: dobTf.rx.text.orEmpty.asDriver(),
+                                                      about: aboutTf.rx.text.orEmpty.asDriver(),
+                                                      saveAction: saveButton.rx.tap.asDriver(),
+                                                      cancelAction: Driver.empty()))
+        output.dismiss
+            .drive()
+            .disposed(by: disposeBag)
+        output.saveEnable
+            .drive(saveButton.rx.isEnabled)
+            .disposed(by: disposeBag)
     }
     
     private func configUI() {
         title = "NEW CARD VISIT"
         imageView.layer.cornerRadius = imageView.frame.width / 2
         saveButton.layer.cornerRadius = 5
+        
+        let textfields = [nameTf, positionTf, addressTf, genderTf, dobTf, aboutTf]
+        textfields.forEach({ $0?.autocorrectionType = .no})
     }
     
     
