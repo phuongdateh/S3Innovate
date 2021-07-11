@@ -86,8 +86,6 @@ extension CardsViewController: UITableViewDelegate {
         headerView.backgroundColor = .white
         searchTf.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            searchTf.centerXAnchor.constraint(equalTo: headerView.centerXAnchor),
-            searchTf.centerYAnchor.constraint(equalTo: headerView.centerYAnchor),
             searchTf.leadingAnchor.constraint(equalTo: headerView.leadingAnchor, constant: 20),
             searchTf.trailingAnchor.constraint(equalTo: headerView.trailingAnchor, constant: -20),
             searchTf.topAnchor.constraint(equalTo: headerView.topAnchor, constant: 20),
