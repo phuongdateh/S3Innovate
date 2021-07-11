@@ -32,17 +32,24 @@ class CardsViewModel: ViewModelType {
     func transform(input: Input) -> Output {
         let activityIndicator = ActivityIndicator()
         let errorTracker = ErrorTracker()
-        let cards = input.viewWillAppear.flatMapLatest {
-            return self.usecase
-                .cards()
-                .trackActivity(activityIndicator)
-                .trackError(errorTracker)
-                .asDriverOnErrorJustComplete()
-                .map { cards -> [CardLocal] in
-                    return cards.map({ $0.toLocal() })
-                }
-        }
-        
+        let cards = Driver.combineLatest(input.viewWillAppear, input.textSearch)
+            .flatMapLatest { (_, text) in
+                return self.usecase
+                    .cards()
+                    .trackActivity(activityIndicator)
+                    .trackError(errorTracker)
+                    .asDriverOnErrorJustComplete()
+                    .map { cards -> [CardLocal] in
+                        return cards.map({$0.toLocal()})
+                            .filter { card in
+                                if text.isEmpty {
+                                    return true
+                                }
+                                return card.name?.contains(text) ?? false
+                            }
+                    }
+            }
+
         let fetching = activityIndicator.asDriver()
         let errors = errorTracker.asDriver()
         let selecedCard: Driver<CardLocal> = input.selection
@@ -68,6 +75,7 @@ extension CardsViewModel {
         let viewWillAppear: Driver<Void>
         let createCard: Driver<Void>
         let selection: Driver<IndexPath>
+        let textSearch: Driver<String>
     }
     
     struct Output {

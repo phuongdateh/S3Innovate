@@ -43,7 +43,8 @@ class CardsViewController: ViewController {
             
             let output = viewModel.transform(input: .init(viewWillAppear: Driver.merge(viewWillAppear, pull),
                                                           createCard: addButton.rx.tap.asDriver(),
-                                                          selection: tableView.rx.itemSelected.asDriver()))
+                                                          selection: tableView.rx.itemSelected.asDriver(),
+                                                          textSearch: searchTf.rx.text.orEmpty.asDriver()))
             output.cards
                 .drive(tableView.rx.items(cellIdentifier: CardTableViewCell.reuseID, cellType: CardTableViewCell.self)) { tv, cardLocal, cell in
                     cell.setupData(card: cardLocal)
