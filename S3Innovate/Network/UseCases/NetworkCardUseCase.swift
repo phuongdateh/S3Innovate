@@ -10,18 +10,27 @@ import RxSwift
 
 class NetworkCardUseCase: ICardUseCase {
     
+    private let disposeBag = DisposeBag()
+    private let provider = DataLocalUseCaseProvider()
+    
     func cards() -> Observable<[Card]> {
-        let provider = DataLocalUseCaseProvider()
         let cache = provider.maketCardUseCase()
         let cardsLocal = cache.cards().asObservable()
-        let _ = APIService.shared.getCards()
-            .do(onNext: { cards in
-                cards.forEach({ $0.asLocal() })
-            })
-        return cardsLocal
-            .map { cards in
-                return cards.sorted(by: { $0.createdAt > $1.createdAt})
-            }
+        var currentCards = [Card]()
+        let remote = APIService.shared.getCards()
+        let observer = BehaviorSubject<[Card]>(value: [])
+        
+        cardsLocal.flatMap { cards -> Observable<[Card]> in
+            currentCards.removeAll()
+            currentCards.append(contentsOf: cards)
+//            observer.onNext(cards)
+            return remote
+        }.subscribe(onNext: { remoteCards in
+            currentCards.append(contentsOf: remoteCards)
+            observer.onNext(currentCards)
+        }).disposed(by: disposeBag)
+        
+        return observer.asObservable()
     }
     
     func addNewCard(card: Card) -> Observable<Void> {

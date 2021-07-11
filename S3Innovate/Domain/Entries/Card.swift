@@ -16,6 +16,9 @@ struct Card: Codable {
     let address: String
     let id: String
     let createdAt: Date
+    let about: String
+    let gender: String
+    let dob: String
     
     init(name: String,
          mobile: String,
@@ -23,7 +26,10 @@ struct Card: Codable {
          position: String,
          address: String,
          id: String,
-         createdAt: Date) {
+         createdAt: Date,
+         about: String,
+         gender: String,
+         dob: String) {
         self.name = name
         self.mobile = mobile
         self.company = company
@@ -31,6 +37,9 @@ struct Card: Codable {
         self.address = address
         self.id = id
         self.createdAt = createdAt
+        self.about = about
+        self.gender = gender
+        self.dob = dob
     }
     
     init(from decoder: Decoder) throws {
@@ -43,6 +52,9 @@ struct Card: Codable {
         self.position = try! container.decode(String.self, forKey: .position)
         self.name = try! container.decode(String.self, forKey: .name)
         self.createdAt = Date()
+        self.about = ""
+        self.gender = ""
+        self.dob = ""
     }
     
     private enum CodingKeys: String, CodingKey {
@@ -53,6 +65,9 @@ struct Card: Codable {
         case address
         case id
         case createdAt
+        case about
+        case gender
+        case dob
     }
 }
 
@@ -66,5 +81,15 @@ extension Card {
     
     func toLocal() -> CardLocal {
         return .init(card: self)
+    }
+}
+
+extension Card: Hashable, Equatable {
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+    
+    public static func == (lhs: Card, rhs: Card) -> Bool {
+            return lhs.id == rhs.id
     }
 }

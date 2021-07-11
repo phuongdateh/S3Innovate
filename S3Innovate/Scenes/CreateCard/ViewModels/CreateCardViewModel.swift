@@ -45,7 +45,10 @@ class CreateCardViewModel: ViewModelType {
                              position: position,
                              address: address,
                              id: UUID().uuidString,
-                             createdAt: Date())
+                             createdAt: Date(),
+                             about: about,
+                             gender: gender,
+                             dob: dob)
             }
             .flatMapLatest { [unowned self] in
                 return self.usecase.addNewCard(card: $0)

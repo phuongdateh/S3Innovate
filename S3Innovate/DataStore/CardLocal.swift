@@ -16,6 +16,9 @@ class CardLocal: Object {
     @objc dynamic var position: String?
     @objc dynamic var address: String?
     @objc dynamic var createdAt: Date?
+    @objc dynamic var about: String?
+    @objc dynamic var gender: String?
+    @objc dynamic var dob: String?
     
     convenience init(card: Card) {
         self.init()
@@ -26,6 +29,9 @@ class CardLocal: Object {
         self.position = card.position
         self.address = card.address
         self.createdAt = card.createdAt
+        self.about = about
+        self.gender = gender
+        self.dob = dob
     }
     
     override class func primaryKey() -> String? {
@@ -35,7 +41,16 @@ class CardLocal: Object {
 
 extension CardLocal {
     func toCard() -> Card {
-        return .init(name: name ?? "", mobile: mobile ?? "", company: company ?? "", position: position ?? "", address: address ?? "", id: id, createdAt: createdAt ?? Date())
+        return Card.init(name: name ?? "",
+                         mobile: mobile ?? "",
+                         company: company ?? "",
+                         position: position ?? "",
+                         address: address ?? "",
+                         id: id,
+                         createdAt: createdAt ?? Date(),
+                         about: about ?? "",
+                         gender: gender ?? "",
+                         dob: dob ?? "")
     }
 }
 
