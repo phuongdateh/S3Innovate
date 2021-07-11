@@ -20,6 +20,12 @@ class CardsViewController: ViewController {
     var viewModel: CardsViewModel!
     
     private var refreshControl: UIRefreshControl!
+    private var searchTf: UITextField = {
+        let textfield = UITextField()
+        textfield.borderStyle = .roundedRect
+        textfield.placeholder = "Search"
+        return textfield
+    }()
         
     
     // MARK: - viewDidLoad
@@ -57,7 +63,7 @@ class CardsViewController: ViewController {
     }
     
     private func configUI() {
-        title = "Cards"
+        title = "CARDS"
         addButton.layer.cornerRadius = addButton.frame.width / 2
         
         tableView.refreshControl = UIRefreshControl()
@@ -69,5 +75,28 @@ class CardsViewController: ViewController {
         tableView.backgroundColor = .lightText
         tableView.backgroundView?.backgroundColor = .lightText
         tableView.separatorStyle = .none
+        tableView.rx.setDelegate(self).disposed(by: disposeBag)
+    }
+}
+
+extension CardsViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = UIView()
+        headerView.addSubview(searchTf)
+        headerView.backgroundColor = .white
+        searchTf.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            searchTf.centerXAnchor.constraint(equalTo: headerView.centerXAnchor),
+            searchTf.centerYAnchor.constraint(equalTo: headerView.centerYAnchor),
+            searchTf.leadingAnchor.constraint(equalTo: headerView.leadingAnchor, constant: 20),
+            searchTf.trailingAnchor.constraint(equalTo: headerView.trailingAnchor, constant: -20),
+            searchTf.topAnchor.constraint(equalTo: headerView.topAnchor, constant: 20),
+            searchTf.bottomAnchor.constraint(equalTo: headerView.bottomAnchor, constant: -5)
+        ])
+        return headerView
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 72
     }
 }

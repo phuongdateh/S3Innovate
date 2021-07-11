@@ -34,7 +34,7 @@ class CardDetailViewController: ViewController {
     }
     
     private func configUI() {
-        title = "Card Detail"
+        title = "CARD DETAIL"
         tableView.estimatedRowHeight = 64
         tableView.rowHeight = UITableView.automaticDimension
         tableView.register(UINib(nibName: CardTableViewCell.reuseID, bundle: nil), forCellReuseIdentifier: CardTableViewCell.reuseID)
